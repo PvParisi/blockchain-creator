@@ -1,8 +1,8 @@
-.tc {
-    text-align: center;
+h1 {
+    font-weight: 600;
     color: aliceblue
 }
 
-.tc h1 {
-    font-weight: 600
+h3 {
+    color: aliceblue
 }
