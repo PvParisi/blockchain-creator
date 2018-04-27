@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import Blockchain from './blockchain/Blockchain';
+
 class App extends Component {
   render() {
     return (
