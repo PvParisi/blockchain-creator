@@ -9,7 +9,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Block />
+        <Block index='0'/>
       </div>
     );
   }
