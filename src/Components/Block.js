@@ -27,8 +27,12 @@ const Block = ({ index, previousHash, timestamp, data, hash, nonce }) => {
 							<label for="inputNonce">Nonce</label>
 							<input type="text" class="form-control" id="inputNonce" placeholder="Nonce"></input>
 						</div>
+						<div class="form-group col-md-2">
+							<button class="btn btn-primary btn-fab btn-fab-mini btn-round" disabled>
+								<i class="material-icons">autorenew</i>
+							</button>
+						</div>
 					</div>
-					<button type="submit" class="btn btn-primary">Mine Block</button>
 				</form>
 			</div>
 		</div>
