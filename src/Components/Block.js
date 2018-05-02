@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Block = ({ index, previousHash, timestamp, data, hash, nonce }) => {
+const BlockComponent = ({ index, previousHash, timestamp, data, hash, nonce }) => {
 	return(
 		<div className='card mx-auto block-width'>
 			<div className='card-body'>
@@ -39,4 +39,4 @@ const Block = ({ index, previousHash, timestamp, data, hash, nonce }) => {
 	);
 }
 
-export default Block;
+export default BlockComponent;

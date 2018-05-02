@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import Block from './Components/Block';
+import BlockchainComponent from './Components/Blockchain';
 import NewBlock from './Components/NewBlock';
 import Header from './Components/Header';
 
@@ -13,17 +13,12 @@ class App extends Component {
 
   render() {
 
+    console.log(this.blockchain.blockchain);
+
     return (
       <div className='App'>
         <Header />
-        <Block
-          index = {this.blockchain.blockchain[0].index}
-          previousHash = {this.blockchain.blockchain[0].previousHash}
-          timestamp = {this.blockchain.blockchain[0].timestamp}
-          data = {this.blockchain.blockchain[0].data}
-          hash = {this.blockchain.blockchain[0].hash}
-          nonce = {this.blockchain.blockchain[0].nonce}
-        />
+        <BlockchainComponent blocks={this.blockchain.blockchain} />
         <NewBlock />
       </div>
     );
