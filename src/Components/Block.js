@@ -8,7 +8,7 @@ const BlockComponent = ({ index, previousHash, timestamp, data, hash, nonce }) =
 				<form>
 					<div class="form-group">
 						<label for="inputData">Data</label>
-						<input type="text" class="form-control" id="inputData" placeholder={data} disabled></input>
+						<input type="text" class="form-control" id="inputData" value={data} placeholder={data}></input>
 					</div>
 					<div class="form-group">
 						<label for="inputPreviousHash">Previous Hash</label>
@@ -21,11 +21,11 @@ const BlockComponent = ({ index, previousHash, timestamp, data, hash, nonce }) =
 					<div class="form-row">
 					    <div class="form-group col-md-7">
 							<label for="inputTimestamp">Created on</label>
-							<input type="text" class="form-control" id="inputTimestamp" placeholder={timestamp}></input>
+							<input type="text" class="form-control" id="inputTimestamp" placeholder={timestamp} disabled></input>
 						</div>
 						<div class="form-group col-md-3">
 							<label for="inputNonce">Nonce</label>
-							<input type="text" class="form-control" id="inputNonce" placeholder={nonce}></input>
+							<input type="text" class="form-control" id="inputNonce" placeholder={nonce} disabled></input>
 						</div>
 						<div class="form-group col-md-2">
 							<button class="btn btn-primary btn-fab btn-fab-mini btn-round" disabled>
