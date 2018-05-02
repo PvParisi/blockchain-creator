@@ -2,7 +2,7 @@ import React from 'react';
 
 const NewBlock = () => {
 	return(
-		<div className='card' style={{width: '30rem'}}>
+		<div className='card mx-auto block-width'>
 			<div className='card-body'>
 				<h4 className='card-title'>Add New Block</h4>
 				<form>

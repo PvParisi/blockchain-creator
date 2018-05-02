@@ -8,8 +8,8 @@ class Block {
 		this.nonce = nonce;
 	}
 
-	get genesis() {
-		new Block(
+	static get genesis() {
+		return new Block(
 			0,
 			'0',
 			Date.now(),

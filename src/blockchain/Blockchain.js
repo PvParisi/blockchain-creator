@@ -3,9 +3,9 @@ import crypto from 'crypto';
 import Block from './Block';
 
 class Blockchain {
-	constructor() {
-		this.blockchain = [Block.genesis()];
-		this.difficulty = 3;
+	constructor(difficulty) {
+		this.blockchain = [Block.genesis];
+		this.difficulty = difficulty;
 	}
 
 	get() {
