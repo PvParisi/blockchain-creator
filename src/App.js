@@ -9,16 +9,22 @@ import Blockchain from './blockchain/Blockchain';
 
 class App extends Component {
 
-  blockchain = new Blockchain(2);
+  constructor() {
+    super();
+
+    this.state = {
+      blockchain: new Blockchain(2)
+    }
+  }
 
   render() {
 
-    console.log(this.blockchain.blockchain);
+    console.log(this.state.blockchain.blockchain);
 
     return (
       <div className='App'>
         <Header />
-        <BlockchainComponent blocks={this.blockchain.blockchain} />
+        <BlockchainComponent blocks={this.state.blockchain.blockchain} />
         <NewBlock />
       </div>
     );
