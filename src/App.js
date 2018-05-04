@@ -17,6 +17,11 @@ class App extends Component {
     }
   }
 
+
+  onAddBtnClick = () => {
+    console.log("addBtnClicked");
+  }
+
   render() {
 
     console.log(this.state.blockchain.blockchain);
@@ -25,7 +30,7 @@ class App extends Component {
       <div className='App'>
         <Header />
         <BlockchainComponent blocks={this.state.blockchain.blockchain} />
-        <NewBlock />
+        <NewBlock addBtnClicked={this.onAddBtnClick} />
       </div>
     );
   }

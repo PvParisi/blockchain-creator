@@ -1,6 +1,6 @@
 import React from 'react';
 
-const NewBlock = () => {
+const NewBlock = ({addBtnClicked}) => {
 	return(
 		<div className='card mx-auto block-width'>
 			<div className='card-body'>
@@ -10,7 +10,7 @@ const NewBlock = () => {
 						<label for="inputData">Data</label>
 						<input type="text" class="form-control" id="inputData" placeholder="insert data here"></input>
 					</div>
-					<button class="btn btn-primary btn-round">
+					<button class="btn btn-primary btn-round" onClick={addBtnClicked}>
 						Add new Block
 					</button>
 				</form>
