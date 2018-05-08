@@ -42,7 +42,7 @@ class Blockchain {
 			nonce++;
 
 			nextHash = this.computeHash(
-				this.lastBlock.index - 1,
+				this.lastBlock.index + 1,
 				this.lastBlock.hash,
 				timestamp,
 				data,
@@ -83,6 +83,8 @@ class Blockchain {
 
 		if (nextBlockHash !== nextBlock.hash) {
 			console.log("ERROR: invalid hash");
+			console.log('nextBlockHash', nextBlockHash);
+			console.log('nextBlock.hash', nextBlock.hash);
 			return false;
 		}
 
