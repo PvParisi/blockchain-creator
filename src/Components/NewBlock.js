@@ -6,11 +6,11 @@ const NewBlock = ({addBtnClicked}) => {
 			<div className='card-body'>
 				<h4 className='card-title'>Add New Block</h4>
 				<form>
-					<div class="form-group">
-						<label for="inputData">Data</label>
-						<input type="text" class="form-control" id="inputData" placeholder="insert data here"></input>
+					<div className="form-group">
+						<label htmlFor="inputData">Data</label>
+						<input type="text" className="form-control" id="inputData" placeholder="insert data here"></input>
 					</div>
-					<button class="btn btn-primary btn-round" onClick={addBtnClicked}>
+					<button className="btn btn-primary btn-round" onClick={addBtnClicked}>
 						Add new Block
 					</button>
 				</form>
